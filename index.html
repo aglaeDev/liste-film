@@ -3,14 +3,39 @@
   <head>
     <title>Basic routing</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <a href="#">Home</a>
-    <a href="#pagelist">PageList</a>
-    <a href="#pagelist/borderlands">PageList borderlands</a>
-
-    <section id="pageContent">Choisissez un lien</section>
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+      <div class="navbar" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pagelist"><i class="far fa-clone"></i>pagelist</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#pagelist/borderlands"><i class="far fa-clone"></i>pagelist borderlands</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <div class="wrap">
+    <div class="search">
+       <input href="#pagelist/article.name" type="text" class="searchTerm" placeholder="video games ?">
+       <button type="submit" class="searchButton">
+         <i class="fa fa-search"></i>
+      </button>
+    </div>
+ </div>
+ 
+  <section id="pageContent">Choisissez un lien</section>
 
     <script src="js/Home.js"></script>
     <script src="js/PageList.js"></script>
